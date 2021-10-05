@@ -64,13 +64,13 @@ Extract ettiğiniz bot dosyasını composerı açarak, composer içerisinden se�
 
 Daha Sonra EduBot'u Bot Composer içerisinden açabilmelisiniz.
 
-<img src="https://user-images.githubusercontent.com/14835957/131674595-f2622de3-92e8-46e5-a790-972f8dcf9d56.png" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/YagmurKirarslan/EduBot/main/Screenshots/Kurulum/ss0.png" width=80% height=80%>
 
 
 ## 2. EduBot'u Publish Edin
 
 EduBot'u publish edebilmek için yapmanız gereken ilk şey, bir Publishing Profile oluşturmak. Bu adımı tamamen composer içerisinden tamamlayabilirsiniz.
 
-![image](https://user-images.githubusercontent.com/14835957/133958169-b4069ba8-4acd-4053-887f-b2daf5faeac3.png)
+![image](https://raw.githubusercontent.com/YagmurKirarslan/EduBot/main/Screenshots/Kurulum/ss1.png)
 
 
