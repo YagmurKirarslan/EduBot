@@ -1,0 +1,143 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "ZQACoA",
+    "name": "Iletisim",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "cRCHEi"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "XBiKea"
+          },
+          "assignments": [
+            {
+              "property": "dialog.iletisimbilgi",
+              "value": "=string(\"Okulumuzun iletişim bilgileriyle ilgili bir arama yaptığını fark ettim.\")"
+            },
+            {
+              "property": "dialog.iletisimentity",
+              "value": "=turn.recognized.entities"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "eGuJ7e"
+          },
+          "activity": "${SendActivity_eGuJ7e()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "IGgr1f"
+          },
+          "condition": "=contains(dialog.iletisimentity, \"iletisimtipi\")",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "MM3Lci"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.bilgiislembilgi",
+                  "value": "=string(\"Bilgi işlem veya bilgi işleme nasıl ulaşabileceği hakkında kısa bir bilgi paylaşın.\")"
+                },
+                {
+                  "property": "dialog.bilgiislem",
+                  "value": "=string(\"bilgi.islem@okuladi.com.tr\")"
+                },
+                {
+                  "property": "dialog.ogrenciisleribilgi",
+                  "value": "=string(\"Öğrenci işleri veya öğrenci işlerine nasıl ulaşabileceği hakkında kısa bir bilgi paylaşın.\")"
+                },
+                {
+                  "property": "dialog.ogrenciisleri",
+                  "value": "=string(\"Öğrenci işlerine ait mail adresini buraya ekleyin\")"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "Dp27Yp"
+              },
+              "condition": "=dialog.iletisimentity.iletisimtipi[0][0]",
+              "cases": [
+                {
+                  "value": "ogrenciisleri",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "DZX36y"
+                      },
+                      "activity": "${SendActivity_DZX36y()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "bilgiislem",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "AryVY6"
+                      },
+                      "activity": "${SendActivity_AryVY6()}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "LqnYmB"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.okuliletisim",
+                  "value": "=string(\"Aday veli veya öğrencilerin okulunuza hangi kanallar aracılığıyla erişebileceği hakkında bilgi verin. Sonrasında bilgilerini alarak siz de onlara ulaşabilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.iletisimdetaylar",
+                  "value": "=string(\"Aşağıdaki butonu kullanarak detaylar için websitenize, mail adresiniz veya telefon numaranıza yönlendirme yapabilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.iletisimaction",
+                  "value": "=string(\"İletisime gecin\")"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "iG5Mjr"
+              },
+              "activity": "${SendActivity_iG5Mjr()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Iletisim.lg",
+  "recognizer": "Iletisim.lu.qna",
+  "id": "Iletisim"
+}

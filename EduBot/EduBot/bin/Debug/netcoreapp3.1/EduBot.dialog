@@ -1,0 +1,507 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "EduBot",
+    "description": "",
+    "id": "4pM5gc"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "$designer": {
+        "id": "376720"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "518944",
+            "name": "Loop: for each item"
+          },
+          "itemsProperty": "turn.Activity.membersAdded",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "641773",
+                "name": "Branch: if/else"
+              },
+              "condition": "string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "PlH6iz"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "WelcomeDialog"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "e1i6lY",
+        "name": "Cancel"
+      },
+      "intent": "Cancel",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "FDsuIq"
+          },
+          "activityProcessed": true,
+          "dialog": "CancelDialog"
+        }
+      ],
+      "condition": "=turn.recognized.score > 0.9"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "9wETGs",
+        "name": "Help"
+      },
+      "intent": "Help",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "B0NP8m"
+          },
+          "activityProcessed": true,
+          "dialog": "HelpDialog"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnError",
+      "$designer": {
+        "id": "aLQGr7"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TelemetryTrackEventAction",
+          "$designer": {
+            "id": "Aucn7t"
+          },
+          "eventName": "ErrorOccurred",
+          "properties": {
+            "Type": "=turn.dialogEvent.value.className",
+            "Exception": "=turn.dialogEvent.value"
+          }
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "2outgQ"
+          },
+          "activity": "${SendActivity_ErrorOccured()}"
+        },
+        {
+          "$kind": "Microsoft.TraceActivity",
+          "$designer": {
+            "id": "NVFqr5"
+          },
+          "name": "=turn.dialogEvent.value.className",
+          "valueType": "Exception",
+          "value": "=turn.dialogEvent.value",
+          "label": "ErrorOccurred"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "FOxcnx"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "IQMEuO"
+          },
+          "activity": "${SendActivity_DidNotUnderstand()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "a6p1yk",
+        "name": "Tarihce"
+      },
+      "intent": "Tarihce",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "6uVSkZ"
+          },
+          "activityProcessed": true,
+          "dialog": "Tarihce"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "M2C76i",
+        "name": "Duyurular"
+      },
+      "intent": "Duyurular",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "0GJmAM"
+          },
+          "activityProcessed": true,
+          "dialog": "Duyurular"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "KnLSbm",
+        "name": "Akademik-Takvim"
+      },
+      "intent": "Akademik-Takvim",
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "nthOvb"
+          },
+          "assignments": [
+            {
+              "property": "dialog.akademiktakvim",
+              "value": "=string(\"Akademik takviminizle ilgili bu akıllı kartı düzenleyerek kullanabilirsiniz.\")"
+            },
+            {
+              "property": "dialog.akademiktakvimornek",
+              "value": "=string(\"İsterseniz doğrudan ilgili kaybağa yönlendirebileceğiniz gibi sorulduğu tarihe göre o ayın takvimini dönecek bir kart tasarımı yapabilmeniz de mümkün.\")"
+            },
+            {
+              "property": "dialog.akademikdetay",
+              "value": "=string(\"Akademik takvimin tamamını aday veli ve öğrencilerle paylaşabilmek için onları ilgili websitesi veya dokümana yönlendirecek aşağıdaki gibi bir buton ekleyebilirsiniz.\")"
+            },
+            {
+              "property": "dialog.akademikaction",
+              "value": "=string(\"Akademik takvimin tamamı için...\")"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "fC1KTx"
+          },
+          "activity": "${SendActivity_fC1KTx()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "O3817Y",
+        "name": "Kayit-Kosullari"
+      },
+      "intent": "Kayit-Kosullari",
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "yvrNHR"
+          },
+          "assignments": [
+            {
+              "property": "dialog.kayitkosullari",
+              "value": "=string(\"Kayıt koşullarınızla ilgili bu alanda bilgilendirme yapabilirsiniz. Her okul için farklı koşullarınız varsa bu kartı daha geniş bir hale çevirebiliriz\")"
+            },
+            {
+              "property": "dialog.kayitkosullaridetaylar",
+              "value": "=string(\"Aşağıdaki butonu kullanarak detaylar için websitenize yönlendirme yapabilirsiniz.\")"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "1UfQJ4"
+          },
+          "activity": "${SendActivity_1UfQJ4()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "tOWXiN",
+        "name": "Kurumsal"
+      },
+      "intent": "Kurumsal",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "p7FvY6"
+          },
+          "activityProcessed": true,
+          "dialog": "Kurumsal"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "iz5KQh",
+        "name": "Burslar"
+      },
+      "intent": "Burslar",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "aWKPnj"
+          },
+          "activityProcessed": true,
+          "dialog": "Burslar"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "NcowtV",
+        "name": "Ucretler"
+      },
+      "intent": "Ucretler",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "oUl8qM"
+          },
+          "activityProcessed": true,
+          "dialog": "Ucretler"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "AgLZhY",
+        "name": "Iletisim"
+      },
+      "intent": "Iletisim",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "a9I2VM"
+          },
+          "activityProcessed": true,
+          "dialog": "Iletisim"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "XbmEA7",
+        "name": "Sosyal-Aktiviteler"
+      },
+      "intent": "Sosyal-Aktiviteler",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "zpwjAg"
+          },
+          "activityProcessed": true,
+          "dialog": "Sosyal-Aktiviteler"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "9uGdJN",
+        "name": "Sanal-Tur"
+      },
+      "intent": "Sanal-Tur",
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "JnwHp4"
+          },
+          "assignments": [
+            {
+              "property": "dialog.ziyaretbilgi",
+              "value": "=string(\"Pandemi sebebiyle okulunuza ziyaretçi girişi kabul edemiyorsanız bu kart ile onları bir sanal tura yönlendirin.\")"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "pEYQYl"
+          },
+          "activity": "${SendActivity_pEYQYl()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "DCsGev",
+        "name": "Akademik-Kadro"
+      },
+      "intent": "Akademik-Kadro",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "XX1pas"
+          },
+          "activityProcessed": true,
+          "dialog": "Akademik-Kadro"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "lTAgEC",
+        "name": "Yurtdisi"
+      },
+      "intent": "Yurtdisi",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "nf5bJM"
+          },
+          "activityProcessed": true,
+          "dialog": "Yurtdisi"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "V6FDH0",
+        "name": "Okul-Basarilari"
+      },
+      "intent": "Okul-Basarilari",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "X1ERTc"
+          },
+          "activityProcessed": true,
+          "dialog": "Okul-Basarilari"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnQnAMatch",
+      "$designer": {
+        "id": "B29XUg"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "uc3Zdu"
+          },
+          "condition": "count(turn.recognized.answers[0].context.prompts) > 0",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "DcmrQh"
+              },
+              "property": "dialog.qnaContext",
+              "value": "=turn.recognized.answers[0].context.prompts"
+            },
+            {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "Xd7uJn"
+              },
+              "maxTurnCount": 3,
+              "alwaysPrompt": true,
+              "allowInterruptions": false,
+              "prompt": "${TextInput_Prompt_IkghVg()}",
+              "property": "turn.qnaMultiTurnResponse"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "oyT0ER"
+              },
+              "property": "turn.qnaMatchFromContext",
+              "value": "=where(dialog.qnaContext, item, item.displayText == turn.qnaMultiTurnResponse)"
+            },
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "$designer": {
+                "id": "TGs86E"
+              },
+              "property": "dialog.qnaContext"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "LbKWra"
+              },
+              "condition": "turn.qnaMatchFromContext && count(turn.qnaMatchFromContext) > 0",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "qrqD45"
+                  },
+                  "property": "turn.qnaIdFromPrompt",
+                  "value": "=turn.qnaMatchFromContext[0].qnaId"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.EmitEvent",
+              "$designer": {
+                "id": "aIqAv4"
+              },
+              "eventName": "activityReceived",
+              "eventValue": "=turn.activity"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "iTins5"
+              },
+              "activity": "${SendActivity_sowtYp()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "EduBot.lg",
+  "id": "EduBot",
+  "recognizer": "EduBot.lu.qna"
+}

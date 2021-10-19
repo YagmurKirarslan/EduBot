@@ -1,0 +1,144 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "qzR5bc",
+    "name": "Kurumsal",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "0cU0Zu"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "Iy4IO0"
+          },
+          "assignments": [
+            {
+              "property": "dialog.kurumsalbilgi",
+              "value": "=string(\"Okulumuz hakkında daha kurumsal bilgiler almak istediğini anlıyorum.\")"
+            },
+            {
+              "property": "dialog.kurumsalentity",
+              "value": "=turn.recognized.entities"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "wx5HPM"
+          },
+          "activity": "${SendActivity_wx5HPM()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "NZIAto"
+          },
+          "condition": "=contains(dialog.kurumsalentity, \"kurumsal\")",
+          "actions": [
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "WPATps"
+              },
+              "condition": "=dialog.kurumsalentity.kurumsal[0][0]",
+              "cases": [
+                {
+                  "value": "vizyon",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.BeginDialog",
+                      "$designer": {
+                        "id": "qxKDzS"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "Vizyon"
+                    }
+                  ]
+                },
+                {
+                  "value": "misyon",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.BeginDialog",
+                      "$designer": {
+                        "id": "OmgmQ2"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "Misyon"
+                    }
+                  ]
+                },
+                {
+                  "value": "tarihce",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.BeginDialog",
+                      "$designer": {
+                        "id": "8gLvsk"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "Tarihce"
+                    }
+                  ]
+                }
+              ],
+              "default": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "6Ed6F8"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Kurum-Genel"
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "EPyF25"
+              },
+              "assignments": [
+                {
+                  "value": "=string(\"Okulunuzun kurumsal kimliğini birkaç cümle ile buraya ekleyebilirsiniz.\")",
+                  "property": "dialog.kurumsal"
+                },
+                {
+                  "value": "=string(\"Aşağıdaki butonu kullanarak detaylar için websitenize yönlendirme yapabilirsiniz.\")",
+                  "property": "dialog.kurumsaldetaylar"
+                },
+                {
+                  "value": "=string(\"Daha fazlası için...\")",
+                  "property": "dialog.kurumsalaction"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "Tn3V4y"
+              },
+              "activity": "${SendActivity_Tn3V4y()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Kurumsal.lg",
+  "recognizer": "Kurumsal.lu.qna",
+  "id": "Kurumsal"
+}

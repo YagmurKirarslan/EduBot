@@ -1,0 +1,336 @@
+[import](common.lg)
+
+# SendActivity_eGuJ7e()
+[Activity
+    Text = ${SendActivity_eGuJ7e_text()}
+]
+
+# SendActivity_eGuJ7e_text()
+- ${dialog.iletisimbilgi}
+# SendActivity_DZX36y()
+[Activity
+    Attachments = ${json(SendActivity_DZX36y_attachment_XfSkIZ())}
+]
+
+# SendActivity_DZX36y_attachment_XfSkIZ()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "text": "**Öğrenci İşleri**",
+                                    "wrap": true,
+                                    "color": "Dark"
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                }
+            ],
+            "bleed": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${dialog.ogrenciisleribilgi}",
+                                    "wrap": true,
+                                    "size": "Medium"
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "spacing": "Medium",
+                    "separator": true,
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": 1,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                                    "size": "Small"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center",
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": 6,
+                            "items": [
+                                {
+                                    "type": "FactSet",
+                                    "facts": [
+                                        {
+                                            "title": "E-mail",
+                                            "value": "${dialog.ogrenciisleri}"
+                                        }
+                                    ],
+                                    "height": "stretch",
+                                    "separator": true
+                                }
+                            ],
+                            "verticalContentAlignment": "Center",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "horizontalAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.OpenUrl",
+                            "title": "İletişime Geç",
+                            "url": "https://www.microsoft.com/tr-tr/",
+                            "style": "positive"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
+}```
+# SendActivity_AryVY6()
+[Activity
+    Attachments = ${json(SendActivity_AryVY6_attachment_LCzzZd())}
+]
+
+# SendActivity_AryVY6_attachment_LCzzZd()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "text": "**Bilgi İşlem**",
+                                    "wrap": true,
+                                    "color": "Dark"
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                }
+            ],
+            "bleed": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${dialog.bilgiislembilgi}",
+                                    "wrap": true,
+                                    "size": "Medium"
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "spacing": "Medium",
+                    "separator": true,
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": 1,
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                                    "size": "Small"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center",
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": 6,
+                            "items": [
+                                {
+                                    "type": "FactSet",
+                                    "facts": [
+                                        {
+                                            "title": "E-mail",
+                                            "value": "${dialog.bilgiislem}"
+                                        }
+                                    ],
+                                    "height": "stretch",
+                                    "separator": true
+                                }
+                            ],
+                            "verticalContentAlignment": "Center",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "horizontalAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.OpenUrl",
+                            "title": "İletişime Geç",
+                            "url": "https://www.microsoft.com/tr-tr/",
+                            "style": "positive"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
+}```
+# SendActivity_iG5Mjr()
+[Activity
+    Attachments = ${json(SendActivity_iG5Mjr_attachment_ypFumZ())}
+]
+
+# SendActivity_iG5Mjr_attachment_ypFumZ()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "text": "**İletişim Bilgileri**",
+                                    "wrap": true,
+                                    "color": "Dark"
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                }
+            ],
+            "bleed": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.okuliletisim}",
+                            "wrap": true
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.iletisimdetaylar}",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "${dialog.iletisimaction}",
+                    "url": "https://www.microsoft.com/tr-tr/"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```

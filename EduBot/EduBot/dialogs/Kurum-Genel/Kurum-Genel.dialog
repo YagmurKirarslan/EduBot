@@ -1,0 +1,52 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "8s6qcH",
+    "name": "Kurum-Genel",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "GM7xcN"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "6cOxOh"
+          },
+          "assignments": [
+            {
+              "value": "=string(\"Okulunuzun kurumsal kimliğini birkaç cümle ile buraya ekleyebilirsiniz.\")",
+              "property": "dialog.kurumsal"
+            },
+            {
+              "value": "=string(\"Aşağıdaki butonu kullanarak detaylar için websitenize yönlendirme yapabilirsiniz.\")",
+              "property": "dialog.kurumsaldetaylar"
+            },
+            {
+              "value": "=string(\"Daha fazlası için...\")",
+              "property": "dialog.kurumsalaction"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "wW5Fbv"
+          },
+          "activity": "${SendActivity_wW5Fbv()}"
+        }
+      ]
+    }
+  ],
+  "generator": "Kurum-Genel.lg",
+  "recognizer": "Kurum-Genel.lu.qna",
+  "id": "Kurum-Genel"
+}

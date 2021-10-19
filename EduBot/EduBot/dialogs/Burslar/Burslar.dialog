@@ -1,0 +1,44 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "SzI1TF",
+    "name": "Burslar",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "YRas1Q"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "VN8Brd"
+          },
+          "assignments": [
+            {
+              "property": "dialog.bursdetay",
+              "value": "=string(\"Eğer okulunuz öğrencilerine burs imkanı sunuyorsa, bu bölümde bilgi verebilirsiniz. Daha detaylı bilgi için ziyaret edilebilecek sayfanıza bir buton ile yönlendirme yapabilirsiniz.\")"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "SlfnHp"
+          },
+          "activity": "${SendActivity_SlfnHp()}"
+        }
+      ]
+    }
+  ],
+  "generator": "Burslar.lg",
+  "recognizer": "Burslar.lu.qna",
+  "id": "Burslar"
+}

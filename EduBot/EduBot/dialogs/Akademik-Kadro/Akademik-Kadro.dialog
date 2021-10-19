@@ -1,0 +1,139 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "OcLgsG",
+    "name": "Akademik-Kadro",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "tsiBSe"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "fIIsuh"
+          },
+          "assignments": [
+            {
+              "property": "dialog.kadro",
+              "value": "=string(\"Akademik kadromuz hakkında seni hemen bilgilendirebilirim.\")"
+            },
+            {
+              "property": "dialog.akademikkadroentity",
+              "value": "=turn.recognized.entities"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "YKKqlI"
+          },
+          "activity": "${SendActivity_YKKqlI()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "mIGDM3"
+          },
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "odZcjb"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.ogretmenler",
+                  "value": "=string(\"Burada öğretmeniniz hakkında kısa bir özgeçmiş veya tanıtım metni kullanabilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.ogretmenkaren",
+                  "value": "=string(\"karen.gray@okuladi.com\")"
+                },
+                {
+                  "property": "dialog.ogretmenjoseph",
+                  "value": "=string(\"joseph.mason@okuladi.com\")"
+                },
+                {
+                  "property": "dialog.ogretmendanielle",
+                  "value": "=string(\"danielle.yang@okuladi.com\")"
+                },
+                {
+                  "property": "dialog.ogretmenelijah",
+                  "value": "=string(\"elijah.williams@okuladi.com\")"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "ubnoQP"
+              },
+              "condition": "=dialog.akademikkadroentity.akademikkadro[0][0]",
+              "cases": [
+                {
+                  "value": "sosyalbilgiler",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "d8fk1C"
+                      },
+                      "activity": "${SendActivity_d8fk1C()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "matematik",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "iJEKlV"
+                      },
+                      "activity": "${SendActivity_iJEKlV()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "yabancidil",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "6UUcnT"
+                      },
+                      "activity": "${SendActivity_6UUcnT()}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "condition": "=contains(dialog.akademikkadroentity, \"akademikkadro\")",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "LboxmE"
+              },
+              "activity": "${SendActivity_LboxmE()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Akademik-Kadro.lg",
+  "recognizer": "Akademik-Kadro.lu.qna",
+  "id": "Akademik-Kadro"
+}

@@ -1,0 +1,202 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "gM9l5J",
+    "name": "Sosyal-Aktiviteler",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "s60Wym"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "hMwjz9"
+          },
+          "assignments": [
+            {
+              "property": "dialog.aktiviteentity",
+              "value": "=turn.recognized.entities"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "Zdy9Pe"
+          },
+          "condition": "=contains(dialog.aktiviteentity, \"aktivitetipi\")",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "kPdek9"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.spor",
+                  "value": "=string(\"Okulunuzda bir spor salonu var mı, varsa kaç farklı tesis şeklinde ve kapasitesi gibi bilgileri burada verebilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.sportesisi",
+                  "value": "=string(\"Bu kısımda okulunuzdaki spor tesisleri, imkanları hakkında daha detaylı bilgi verebilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.kulupistatistik",
+                  "value": "=string(\"Kulüplerin toplandığı ana başlıklar ve bu başlıklar altında kaç tane kulüp olduğuyla ilgili bilgi verebilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.aktifkulup",
+                  "value": "=string(\"Burada okulunuzda aktif görev yapan öğrenci kulübü sayılarını, bu kulüplerin online mı yoksa yüz yüze mi çalışmalarını yürüttüğü hakkında bilgi verebilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.kulturkapasite",
+                  "value": "=string(\"Varsa kültür merkezinizin kapasitesi, daha önce burada yapılan etkinlikler hakkında bilgi verebilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.kulturtesis",
+                  "value": "=string(\"Kültür merkeziniz içinde neler barındıyor, ne gibi özelliklere sahip aday veli ve öğrencilerle paylaşabilirsiniz.\")"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "6JiWrW"
+              },
+              "condition": "=dialog.aktiviteentity.aktivitetipi[0][0]",
+              "cases": [
+                {
+                  "value": "kultur",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "jX7Rt4"
+                      },
+                      "activity": "${SendActivity_jX7Rt4()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "spor",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "0Wct6q"
+                      },
+                      "activity": "${SendActivity_0Wct6q()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "kulup",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "1bULMs"
+                      },
+                      "activity": "${SendActivity_1bULMs()}"
+                    },
+                    {
+                      "$kind": "Microsoft.ChoiceInput",
+                      "$designer": {
+                        "id": "wzUNPH"
+                      },
+                      "defaultLocale": "en-us",
+                      "disabled": false,
+                      "maxTurnCount": 3,
+                      "alwaysPrompt": false,
+                      "allowInterruptions": false,
+                      "prompt": "${ChoiceInput_Prompt_wzUNPH()}",
+                      "unrecognizedPrompt": "",
+                      "invalidPrompt": "",
+                      "defaultValueResponse": "",
+                      "choiceOptions": {
+                        "includeNumbers": true
+                      },
+                      "property": "user.choice",
+                      "choices": [
+                        "Evet",
+                        "Hayır"
+                      ],
+                      "style": "suggestedAction"
+                    },
+                    {
+                      "$kind": "Microsoft.SwitchCondition",
+                      "$designer": {
+                        "id": "AyRaMa"
+                      },
+                      "condition": "user.choice",
+                      "cases": [
+                        {
+                          "value": "Evet",
+                          "actions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "9AObmr"
+                              },
+                              "activity": "${SendActivity_9AObmr()}"
+                            },
+                            {
+                              "$kind": "Microsoft.EndTurn",
+                              "$designer": {
+                                "id": "lu434y"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "value": "Hayır",
+                          "actions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "QC5Qto"
+                              },
+                              "activity": "${SendActivity_QC5Qto()}"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "M5D0Tm"
+              },
+              "activity": "${SendActivity_M5D0Tm()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "ydDYuv"
+          },
+          "activity": "${SendActivity_ydDYuv()}"
+        }
+      ]
+    }
+  ],
+  "generator": "Sosyal-Aktiviteler.lg",
+  "recognizer": "Sosyal-Aktiviteler.lu.qna",
+  "id": "Sosyal-Aktiviteler"
+}

@@ -1,0 +1,608 @@
+[import](common.lg)
+
+# SendActivity_ErrorOccured()
+[Activity
+    Text = ${SendActivity_ErrorOccured_text()}
+]
+
+# SendActivity_ErrorOccured_text()
+- Oops, looks like I'm stuck. Can you try to ask me in a different way?
+- Looks like I'm all mixed up. Let's try asking again, but maybe rephrase your request?
+- Sorry, it looks like something went wrong. Can you please try again?
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+    Attachments = ${json(SendActivity_DidNotUnderstand_attachment_8wEkoo())}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Üzgünüm, söylemek istediğin şeyi anlayamadım. Aşağıdaki başlıklardan biriyle devam etmek ister misin?
+- Anladığımdan emin değilim. Lütfen tekrar edebilir misin? Aşağıdaki başlıklardan biriyle devam etmek ister misin?
+- Hımm, tam anlayamadım. Bana farklı bir şekilde sormayı deneyebilir misin? Aşağıdaki başlıklardan biriyle devam etmek ister misin?
+- Bunu anlamadım. Yeniden ifade edip tekrar sorar mısın? Aşağıdaki başlıklardan biriyle devam etmek ister misin?
+# SendActivity_pEYQYl()
+[Activity
+    Attachments = ${json(SendActivity_pEYQYl_attachment_Pbft7K())}
+]
+
+# SendActivity_pEYQYl_attachment_Pbft7K()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "text": "Okul Ziyareti"
+                                }
+                            ],
+                            "width": "stretch"
+                        },
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://adaptivecards.io/content/pending.png",
+                                    "altText": "Pending",
+                                    "height": "30px"
+                                }
+                            ],
+                            "width": "auto"
+                        }
+                    ]
+                }
+            ],
+            "bleed": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${dialog.ziyaretbilgi}",
+                                    "wrap": true
+                                }
+                            ],
+                            "width": "auto"
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "url": "https://th.bing.com/th/id/R.13e5397b582e6696c7cd7edc6598b83e?rik=rCr7Ix9%2fZ7VzBA&pid=ImgRaw&r=0"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.OpenUrl",
+                            "title": "Sanal Tur",
+                            "url": "https://www.microsoft.com/tr-tr/",
+                            "style": "positive"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
+}```
+# SendActivity_1UfQJ4()
+[Activity
+    Attachments = ${json(SendActivity_1UfQJ4_attachment_2vaRVD())}
+]
+
+# SendActivity_1UfQJ4_attachment_2vaRVD()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "text": "**Kayıt Koşulları**",
+                                    "wrap": true,
+                                    "color": "Dark"
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                }
+            ],
+            "bleed": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${dialog.kayitkosullari}",
+                                    "wrap": true,
+                                    "size": "Medium"
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "${dialog.kayitkosullaridetaylar}",
+                    "wrap": true,
+                    "size": "Small"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.OpenUrl",
+                            "title": "Ziyaret Et",
+                            "url": "https://www.microsoft.com/tr-tr/",
+                            "style": "positive"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
+}```
+# SendActivity_fC1KTx()
+[Activity
+    Attachments = ${json(SendActivity_fC1KTx_attachment_rxLcIV())}
+]
+
+# SendActivity_fC1KTx_attachment_rxLcIV()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "speak": "<s>Flight KL0605 to San Fransisco has been delayed.</s><s>It will not leave until 10:10 AM.</s>",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "Medium",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/calendar.png",
+                            "height": "90px"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Akademik Takvim",
+                            "horizontalAlignment": "Right",
+                            "size": "ExtraLarge",
+                            "color": "Accent",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ],
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    },
+                    "verticalContentAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.akademiktakvim}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 60,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Bu ayın planı",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true
+                        },
+                        {
+                            "type": "Image",
+                            "url": "https://s3.envato.com/files/238663351/0006.JPG"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.akademiktakvimornek}",
+                            "spacing": "Small",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.akademikdetay}",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "${dialog.akademikaction}",
+                    "url": "https://www.microsoft.com/tr-tr/",
+                    "style": "destructive"
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_DidNotUnderstand_attachment_8wEkoo()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "type": "AdaptiveCard",
+    "speak": "<s>Your flight is confirmed for you and 3 other passengers from San Francisco to Amsterdam on Friday, October 10 8:30 AM</s>",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Kurumsal",
+            "weight": "Bolder",
+            "spacing": "Medium",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Tarihçe",
+                            "isSubtle": true,
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Duyurular",
+                            "wrap": true,
+                            "isSubtle": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Vizyon",
+                            "horizontalAlignment": "Center",
+                            "isSubtle": true,
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Akademik Takvim",
+                            "wrap": true,
+                            "isSubtle": true,
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Misyon",
+                            "horizontalAlignment": "Right",
+                            "isSubtle": true,
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "İletişim",
+                            "wrap": true,
+                            "isSubtle": true,
+                            "horizontalAlignment": "Right"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Okul Başarıları",
+            "weight": "Bolder",
+            "spacing": "Medium",
+            "wrap": true,
+            "height": "stretch"
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Tavan - Taban Puanları",
+                            "isSubtle": true,
+                            "maxLines": 1,
+                            "height": "stretch",
+                            "spacing": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Akademik Kadro",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "70px",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Sınavlar",
+                            "horizontalAlignment": "Center",
+                            "isSubtle": true,
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Burslar",
+                            "wrap": true,
+                            "isSubtle": true,
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "height": "stretch",
+                    "backgroundImage": {
+                        "horizontalAlignment": "Center"
+                    },
+                    "minHeight": "29px"
+                },
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Kontenjan",
+                            "horizontalAlignment": "Right",
+                            "isSubtle": true,
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Mezun Başarıları",
+                            "horizontalAlignment": "Right",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Sosyal Aktiviteler",
+            "weight": "Bolder",
+            "spacing": "Medium",
+            "wrap": true,
+            "height": "stretch"
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Kulüpler",
+                            "isSubtle": true,
+                            "maxLines": 1,
+                            "height": "stretch",
+                            "spacing": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "100px",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Kültür Merkezi",
+                            "horizontalAlignment": "Center",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ],
+                    "height": "stretch",
+                    "backgroundImage": {
+                        "horizontalAlignment": "Center"
+                    },
+                    "minHeight": "29px"
+                },
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Spor Salonu",
+                            "horizontalAlignment": "Right",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Diğer",
+            "weight": "Bolder",
+            "spacing": "Medium",
+            "wrap": true,
+            "height": "stretch"
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Ücretler",
+                            "isSubtle": true,
+                            "maxLines": 1,
+                            "height": "stretch",
+                            "spacing": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "115px",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Yurtdışı İmkanları",
+                            "horizontalAlignment": "Center",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ],
+                    "height": "stretch",
+                    "backgroundImage": {
+                        "horizontalAlignment": "Center"
+                    },
+                    "minHeight": "29px"
+                },
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Sanal Tur",
+                            "horizontalAlignment": "Right",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# TextInput_Prompt_IkghVg()
+[Activity
+    Text = ${expandText(@answer)}
+    SuggestedActions = ${foreach(turn.recognized.answers[0].context.prompts, x, x.displayText)}
+]
+
+# SendActivity_sowtYp()
+- ${expandText(@answer)}

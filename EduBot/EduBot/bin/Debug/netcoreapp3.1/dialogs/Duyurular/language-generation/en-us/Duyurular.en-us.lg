@@ -1,0 +1,399 @@
+[import](common.lg)
+
+# SendActivity_T6vz3i()
+[Activity
+    Text = ${SendActivity_T6vz3i_text()}
+]
+
+# SendActivity_T6vz3i_text()
+- Okulumuzla ilgili tüm duyurulara, haber ve etkinlik bültenlerine websitemizden ulaşabilirsiniz.
+# SendActivity_Gc5FAb()
+[Activity
+    Text = ${SendActivity_Gc5FAb_text()}
+    Attachments = ${json(SendActivity_Gc5FAb_attachment_VZXiev())} | ${json(SendActivity_Gc5FAb_attachment_rXXsbG())}
+    AttachmentLayout = carousel
+]
+
+# SendActivity_Gc5FAb_attachment_VZXiev()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Etkinlik Bülteni",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-cartoon-kids-band-singing-elements-element-png-image_582985.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "X grubu Konseri",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "FactSet",
+            "facts": [
+                {
+                    "title": "Tarih: xx.xx.20xx",
+                    "value": "Saat: xx.xx"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://www.iconpacks.net/icons/2/free-event-icon-2319-thumb.png",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.etkinlikdetay}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_Gc5FAb_text()
+- Yakın tarihlerde gerçekleşecek etkinliklerimizi aşağıda görebilirsin.
+# SendActivity_Gc5FAb_attachment_rXXsbG()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Etkinlik Bülteni",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://thumbs.dreamstime.com/b/visit-gallery-woman-looking-modern-painting-art-wall-exhibition-event-vector-museum-abstract-exposition-illustration-138935485.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "John Wilson Sergisi",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "FactSet",
+            "facts": [
+                {
+                    "title": "Tarih: xx.xx.20xx",
+                    "value": "Saat: xx.xx"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://www.iconpacks.net/icons/2/free-event-icon-2319-thumb.png",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.etkinlikdetay}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_DVgq8B()
+[Activity
+    Text = ${SendActivity_DVgq8B_text()}
+    Attachments = ${json(SendActivity_DVgq8B_attachment_AVLkfH())} | ${json(SendActivity_DVgq8B_attachment_qMN7Kw())}
+    AttachmentLayout = carousel
+]
+
+# SendActivity_DVgq8B_attachment_AVLkfH()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Duyurular",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://previews.123rf.com/images/macrovector/macrovector1407/macrovector140700473/30081202-office-workers-business-management-meeting-and-brainstorming-on-the-square-table-in-top-view-vector-.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Aylık Okul Aile Birliği Toplantısı",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "FactSet",
+            "facts": [
+                {
+                    "title": "Tarih: xx.xx.20xx",
+                    "value": "Saat: xx.xx"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://files.schudio.com/lytham-cofe-primary-school/images/news/newsletter_icon.png",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.etkinlikdetay}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_DVgq8B_attachment_qMN7Kw()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Duyurular",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://thumbs.dreamstime.com/z/female-badminton-team-winning-medal-crowd-persons-celebrate-summer-games-athletics-sportive-people-celebrating-player-athlete-174309595.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Tenis takımı şampiyonluğu",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "FactSet",
+            "facts": [
+                {
+                    "title": "Tarih: xx.xx.20xx",
+                    "value": "Saat: xx.xx"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://files.schudio.com/lytham-cofe-primary-school/images/news/newsletter_icon.png",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.etkinlikdetay}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_DVgq8B_text()
+- Okulumuz hakkında son dönemde çıkan haberleri aşağıda görebilirsiniz.

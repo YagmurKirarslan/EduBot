@@ -1,0 +1,112 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "O78JZ8",
+    "name": "Yurtdisi",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "1e2LsL"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "rLNU3m"
+          },
+          "assignments": [
+            {
+              "property": "dialog.yurtdisientity",
+              "value": "=turn.recognized.entities"
+            },
+            {
+              "property": "dialog.yurtdisigenel",
+              "value": "=string(\"Yurtdışı ile ilgili gelebilecek daha genel bir soruya bu kart ile cevap verebilirsiniz.\")"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "ynjUNH"
+          },
+          "condition": "=contains(dialog.yurtdisientity, \"yurtdisitipi\")",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "9lkBbM"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.yurtdisiprogram",
+                  "value": "=string(\"Okulunuzda bir yurtdışı programı varsa bunu belirtebilirsiniz, yoksa sağdaki logoyu kaldırabilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.yurtdisidetay",
+                  "value": "=string(\"Burada yurtdışı imkanları veya başarılarınız hakkında kısaca bilgi verip aşağıdaki butonla detaylı bilgiye erişilebilecek bir dokümana yönlendirme yapabilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.yurtdisibasari",
+                  "value": "=string(\"Okulunuzun varsa yurtdışında gösterdiği başarılarından veya başarılı öğrencilerinden burada bahsedebilirsiniz.\")"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "crJ8tK"
+              },
+              "condition": "=dialog.yurtdisientity.yurtdisitipi[0][0]",
+              "cases": [
+                {
+                  "value": "imkanlar",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "8bAHcD"
+                      },
+                      "activity": "${SendActivity_8bAHcD()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "basari",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "oMNViE"
+                      },
+                      "activity": "${SendActivity_oMNViE()}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "gNXD55"
+              },
+              "activity": "${SendActivity_gNXD55()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Yurtdisi.lg",
+  "recognizer": "Yurtdisi.lu.qna",
+  "id": "Yurtdisi"
+}

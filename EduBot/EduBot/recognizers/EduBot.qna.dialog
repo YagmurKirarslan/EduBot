@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "QnA_EduBot",
+  "recognizers": {
+    "en-us": "EduBot.en-us.qna",
+    "": "EduBot.en-us.qna"
+  }
+}

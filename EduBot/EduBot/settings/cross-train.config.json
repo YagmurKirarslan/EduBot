@@ -1,0 +1,49 @@
+{
+  "EduBot.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "": [
+        "WelcomeDialog.en-us"
+      ],
+      "Cancel": [
+        "CancelDialog.en-us"
+      ],
+      "Help": [
+        "HelpDialog.en-us"
+      ],
+      "Tarihce": [
+        "Tarihce.en-us"
+      ],
+      "Duyurular": [
+        "Duyurular.en-us"
+      ],
+      "Akademik-Takvim": "",
+      "Kayit-Kosullari": "",
+      "Kurumsal": [
+        "Kurumsal.en-us"
+      ],
+      "Burslar": [
+        "Burslar.en-us"
+      ],
+      "Ucretler": [
+        "Ucretler.en-us"
+      ],
+      "Iletisim": [
+        "Iletisim.en-us"
+      ],
+      "Sosyal-Aktiviteler": [
+        "Sosyal-Aktiviteler.en-us"
+      ],
+      "Sanal-Tur": "",
+      "Akademik-Kadro": [
+        "Akademik-Kadro.en-us"
+      ],
+      "Yurtdisi": [
+        "Yurtdisi.en-us"
+      ],
+      "Okul-Basarilari": [
+        "Okul-Basarilari.en-us"
+      ]
+    }
+  }
+}

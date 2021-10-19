@@ -1,0 +1,999 @@
+[import](common.lg)
+
+# SendActivity_YKKqlI()
+[Activity
+    Text = ${SendActivity_YKKqlI_text()}
+]
+
+# SendActivity_YKKqlI_text()
+- ${dialog.kadro}
+# SendActivity_d8fk1C()
+[Activity
+    Attachments = ${json(SendActivity_d8fk1C_attachment_wpdwLJ())} | ${SendActivity_d8fk1C_attachment_kNEGym()} | ${SendActivity_d8fk1C_attachment_noQqjB()}
+    AttachmentLayout = carousel
+]
+
+# SendActivity_d8fk1C_attachment_wpdwLJ()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Sosyal Bilgiler Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://images.all-free-download.com/images/graphicthumb/attractive_woman_avatar_template_cartoon_character_sketch_6849756.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Karen Gray",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmenkaren}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_d8fk1C_attachment_kNEGym()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Sosyal Bilgiler Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://www.pngitem.com/pimgs/m/4-42408_vector-art-design-men-fashion-vector-art-illustration.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Joseph Mason",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmenjoseph}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_d8fk1C_attachment_noQqjB()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Sosyal Bilgiler Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://images.all-free-download.com/images/graphicthumb/lady_portrait_avatar_template_cartoon_character_sketch_6849753.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Danielle Yang",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmendanielle}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_iJEKlV()
+[Activity
+    Attachments = ${json(SendActivity_iJEKlV_attachment_DECvij())} | ${json(SendActivity_iJEKlV_attachment_AxQ0yN())} | ${json(SendActivity_iJEKlV_attachment_QT6FCG())} | ${json(SendActivity_iJEKlV_attachment_0cIhow())}
+    AttachmentLayout = carousel
+]
+
+# SendActivity_iJEKlV_attachment_DECvij()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Matematik Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://images.all-free-download.com/images/graphicthumb/attractive_woman_avatar_template_cartoon_character_sketch_6849756.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Karen Gray",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmenkaren}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_iJEKlV_attachment_AxQ0yN()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Matematik Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://www.pngitem.com/pimgs/m/4-42408_vector-art-design-men-fashion-vector-art-illustration.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Joseph Mason",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmenjoseph}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_iJEKlV_attachment_QT6FCG()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Matematik Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://images.all-free-download.com/images/graphicthumb/lady_portrait_avatar_template_cartoon_character_sketch_6849753.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Danielle Yang",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmendanielle}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_6UUcnT()
+[Activity
+    Attachments = ${SendActivity_6UUcnT_attachment_9uIXpz()} | ${SendActivity_6UUcnT_attachment_REaBx5()} | ${json(SendActivity_6UUcnT_attachment_L0WWr8())}
+    AttachmentLayout = carousel
+]
+
+# SendActivity_6UUcnT_attachment_9uIXpz()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Yabancı Dil Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://live.staticflickr.com/65535/50095766391_58b7ae2e60_b.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Elijah Williams",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmenelijah}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_iJEKlV_attachment_0cIhow()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Matematik Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://live.staticflickr.com/65535/50095766391_58b7ae2e60_b.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Elijah Williams",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmenelijah}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_6UUcnT_attachment_REaBx5()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Yabancı Dil Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://images.all-free-download.com/images/graphicthumb/lady_portrait_avatar_template_cartoon_character_sketch_6849753.jpg",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Danielle Yang",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmendanielle}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_6UUcnT_attachment_L0WWr8()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Yabancı Dil Bölümü",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://www.pngitem.com/pimgs/m/4-42408_vector-art-design-men-fashion-vector-art-illustration.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Joseph Mason",
+                            "wrap": true,
+                            "size": "Large",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.ogretmenler}",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-12.jpg",
+                            "size": "Small"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": 6,
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "E-mail",
+                                    "value": "${dialog.ogretmenjoseph}"
+                                }
+                            ],
+                            "height": "stretch",
+                            "separator": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_LboxmE()
+[Activity
+    Attachments = ${SendActivity_LboxmE_attachment_c40IuX()}
+]
+
+# SendActivity_LboxmE_attachment_c40IuX()
+[ThumbnailCard
+  title = Akademik Kadromuz
+  subtitle = Microsoft Okulları
+  text = Kurumunuzda görev alan eğitmenlerle ilgili genel bilgi içerip detaylar için ilgili yerlere yönlendirme yapacak bir akıllı kart yapısı kullanabilirsiniz.
+  image = https://lh3.googleusercontent.com/proxy/FQ5ycrIFRKGrnyijDOq78U1thE0vDjlQ0W8KW084bywuprX-A0FbZ93daqU4yDi8GG5lfGjFJCAulifKXbEaMFjbqjhTOqkuUaiKCdtZW8DC6RdWBa1aeMY7XeenXFaUIStlsV8
+  buttons = ${cardActionTemplate('openUrl', 'Detaylar için...', 'https://login.microsoftonline.com/')}
+]
+
+# cardActionTemplate(type, title, value)
+[CardAction
+    Type = ${if(type == null, 'openUrl', type)}
+    Title = ${title}
+    Value = ${value}
+    Text = ${title}
+]
+

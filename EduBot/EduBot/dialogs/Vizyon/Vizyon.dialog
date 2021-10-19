@@ -1,0 +1,44 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "NFPXhN",
+    "name": "Vizyon",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "fsttkS"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "HnFoYd"
+          },
+          "assignments": [
+            {
+              "property": "dialog.vizyon",
+              "value": "=string(\"Burada vizyonunuz hakkında aday veli veya öğrencilere kısa bir bilgi verebilirsiniz.\")"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "uYloTx"
+          },
+          "activity": "${SendActivity_uYloTx()}"
+        }
+      ]
+    }
+  ],
+  "generator": "Vizyon.lg",
+  "recognizer": "Vizyon.lu.qna",
+  "id": "Vizyon"
+}

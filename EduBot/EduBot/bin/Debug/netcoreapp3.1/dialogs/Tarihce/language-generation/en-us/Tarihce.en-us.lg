@@ -1,0 +1,137 @@
+[import](common.lg)
+
+# SendActivity_AOuPdO()
+[Activity
+    Attachments = ${json(SendActivity_AOuPdO_attachment_nL6VZX())}
+]
+
+# SendActivity_AOuPdO_attachment_nL6VZX()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Tarihçe",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.tarihcebilgi}",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "ColumnSet",
+            "horizontalAlignment": "Center",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "backgroundImage": {
+                        "url": "https://images.pngnice.com/download/2007/Horizontal-Line-Transparent-Background.png",
+                        "horizontalAlignment": "Center",
+                        "verticalAlignment": "Center"
+                    },
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://messagecardplayground.azurewebsites.net/assets/LocationGreen_A.png"
+                        }
+                    ],
+                    "bleed": true,
+                    "spacing": "None"
+                },
+                {
+                    "type": "Column",
+                    "spacing": "None",
+                    "width": 1,
+                    "backgroundImage": {
+                        "url": "https://images.pngnice.com/download/2007/Horizontal-Line-Transparent-Background.png",
+                        "horizontalAlignment": "Center",
+                        "verticalAlignment": "Center"
+                    },
+                    "bleed": true,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://messagecardplayground.azurewebsites.net/assets/LocationBlue_B.png"
+                        }
+                    ],
+                    "height": "stretch"
+                },
+                {
+                    "type": "Column",
+                    "spacing": "None",
+                    "width": 1,
+                    "backgroundImage": {
+                        "url": "https://images.pngnice.com/download/2007/Horizontal-Line-Transparent-Background.png",
+                        "horizontalAlignment": "Center"
+                    },
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://messagecardplayground.azurewebsites.net/assets/LocationRed_C.png"
+                        }
+                    ],
+                    "height": "stretch",
+                    "bleed": true
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.kurulus}",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.gelisme}",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.tarihce}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "${dialog.tarihceaction}",
+                    "url": "https://www.microsoft.com/tr-tr/",
+                    "style": "positive"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```

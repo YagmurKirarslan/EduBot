@@ -1,0 +1,100 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "XYEvTe",
+    "name": "Duyurular",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "rzAwd3"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "lh4cV9"
+          },
+          "assignments": [
+            {
+              "property": "dialog.duyuruentity",
+              "value": "=turn.recognized.entities"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "v7MAWV"
+          },
+          "condition": "=contains(dialog.duyuruentity, \"duyurutipi\")",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "hWjM6A"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.etkinlikdetay",
+                  "value": "=string(\"Etkinlik veya haber detaylarını bu kısma ekleyebilirsiniz.\")"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "Dy871a"
+              },
+              "condition": "=dialog.duyuruentity.duyurutipi[0][0]",
+              "cases": [
+                {
+                  "value": "duyuru",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "DVgq8B"
+                      },
+                      "activity": "${SendActivity_DVgq8B()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "etkinlik",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "Gc5FAb"
+                      },
+                      "activity": "${SendActivity_Gc5FAb()}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "T6vz3i"
+              },
+              "activity": "${SendActivity_T6vz3i()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Duyurular.lg",
+  "recognizer": "Duyurular.lu.qna",
+  "id": "Duyurular"
+}

@@ -1,0 +1,136 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "jDDmpc",
+    "name": "Okul-Basarilari",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "th3x7t"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "hIJ0FP"
+          },
+          "assignments": [
+            {
+              "property": "dialog.basarientity",
+              "value": "=turn.recognized.entities"
+            },
+            {
+              "property": "dialog.okulbasari",
+              "value": "=string(\"Burada okul başarılarınızdan bahsedip detaylar için yönlendirme yapabilir veya kaydırmalı kart yapısıyla burada da aday veli ve öğrencilere sunabilirsiniz.\")"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "LfX7lI"
+          },
+          "condition": "=contains(dialog.basarientity, \"okulbasari\")",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "YRXyoO"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.puanlardetay",
+                  "value": "=string(\"Okul puanlarını, yıllar içindeki puan değişim grafiklerini ekleyebileceğiniz veya kısaca bilgiler verip detaylar için ilgili dokümanlara yönlendirme yapabileceğiniz bir akıllı kart yapısı\")"
+                },
+                {
+                  "property": "dialog.kontenjan",
+                  "value": "=string(\"Her okulun kontenjanı hakkında bilgi verebileceğiniz, bunu görsel olarak da paylaşabileceğiniz bir akıllı kart yapısı\")"
+                },
+                {
+                  "property": "dialog.mezundetay",
+                  "value": "=string(\"Bir önceki dönemin mezun başarıları tablosunu burada sunup daha geçmiş yıllar veya detaylar için ilgili yönlendirmeleri bu akıllı kart yapısı ile sağlayabilirsiniz.\")"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "AYb1WR"
+              },
+              "condition": "=dialog.basarientity.okulbasari[0][0]",
+              "cases": [
+                {
+                  "value": "tavan",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "hDeaXZ"
+                      },
+                      "activity": "${SendActivity_hDeaXZ()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "taban",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "OsCVdH"
+                      },
+                      "activity": "${SendActivity_OsCVdH()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "kontenjan",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "P3T0Mv"
+                      },
+                      "activity": "${SendActivity_P3T0Mv()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "mezun",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "HD5mp1"
+                      },
+                      "activity": "${SendActivity_HD5mp1()}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "EcZOar"
+              },
+              "activity": "${SendActivity_EcZOar()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Okul-Basarilari.lg",
+  "recognizer": "Okul-Basarilari.lu.qna",
+  "id": "Okul-Basarilari"
+}

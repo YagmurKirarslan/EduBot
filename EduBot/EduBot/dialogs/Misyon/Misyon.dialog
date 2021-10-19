@@ -1,0 +1,52 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Fap0VJ",
+    "name": "Misyon",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "WlI4M1"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "Lliz51"
+          },
+          "assignments": [
+            {
+              "property": "dialog.misyon",
+              "value": "=string(\"Burada misyonunuz hakkında aday veli veya öğrencilere kısa bir bilgi verebilirsiniz.\")"
+            },
+            {
+              "property": "dialog.misyondetaylar",
+              "value": "=string(\"Aşağıdaki butonu kullanarak detaylar için websitenize yönlendirme yapabilirsiniz.\")"
+            },
+            {
+              "property": "dialog.misyonaction",
+              "value": "=string(\"Daha fazla bilgi için\")"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "opjtdk"
+          },
+          "activity": "${SendActivity_opjtdk()}"
+        }
+      ]
+    }
+  ],
+  "generator": "Misyon.lg",
+  "recognizer": "Misyon.lu.qna",
+  "id": "Misyon"
+}

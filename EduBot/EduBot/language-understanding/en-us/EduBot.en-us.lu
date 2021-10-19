@@ -1,0 +1,451 @@
+# Cancel
+- cancel
+- quit
+- abort
+- exit
+- never mind
+- forget about it
+- just stop already
+- end this now
+
+# Help
+- Yardım
+- tıkandım
+- nasıl çalışıyorsun
+- neler yapabilirsin
+- bana ne konuda yardım edebilirsin
+- yardıma ihtiyacım var
+- biraz yardıma ihtiyacım var
+- bana yardımcı olabilir misin
+- biraz takıldım
+
+# None
+- where is my car?
+- I want to order a pizza
+- place an item on hold
+- Is it going to rain?
+- turn on the lights
+- check my account balance
+- do unicorns really exist
+- duck
+
+# Tarihce
+- okulun tarihçesi nedir
+- okulun geçmişinden bahseder misin
+- okulun tarihi hakkında bilgi
+- okul hangi yılda kuruldu
+- kurucuları kimler
+
+
+# Kurumsal
+- okulun vizyonu nedir
+- vizyonunuz hakkında bilgi
+- vizyon
+- okul vizyonundan bahseder misin
+- okulunuz hangi vizyon üzerinde eğitim veriyor
+- okulun misyonu nedir
+- misyonunuz hakkında bilgi
+- misyon
+- okul misyonundan bahseder misin
+- okulunuz hangi misyon üzerinde eğitim veriyor
+- okulun tarihçesi nedir
+- okulun geçmişinden bahseder misin
+- okulun tarihi hakkında bilgi
+- okul tarihi
+- tarihçe
+- okul hangi yılda kuruldu
+- kurucuları kimler
+- kurum hakkında bilgi almak istiyorum
+- kurumsal bilgiler
+
+@ list kurumsal = 
+
+    - vizyon :
+        - visyon
+        - vizyonu
+        - vizyonunuz
+        - vizyon
+
+    - misyon :
+        - misyonu
+        - misyonunuz
+        - misyonundan
+        - misyon
+
+    - tarihce :
+        - tarihçe
+        - tarihce
+        - tarihi
+        - tarihiniz
+        - okul geçmişi
+        - kurucular
+        - hangi yıl
+        - tarih
+        - okul tarihi
+
+
+
+
+
+# Burslar
+- Burslar hakkında bilgi almak istiyorum.
+- Burslar hakkında genel bilgi.
+- Burs var mı?
+- Burs veriyor musunuz?
+- Burs oranları / yüzdeleri nedir?
+- Kaç öğrenciye burs veriyorsunuz?
+- Burslu okuyabilir miyim?
+- Burs şartlarınız nedir?
+- Burs yüzdeniz nedir?
+- Başarı bursunuz var mı?
+- Sporcu bursunuz var mı?
+- burs
+- sporcu bursu var mı
+
+
+# Ucretler
+- kayıt ücreti nedir
+- eğitim ücreti nedir
+- eğitim ücreti hakkında bilgi almak istiyorum
+- kayıt ücreti hakkında bilgi almak istiyorum
+- kayıt fiyatı nedir?
+- eğitim fiyatı nedir?
+- eğitim fiyatı hakkında bilgi almak istiyorum
+- kayıt fiyatı hakkında bilgi almak istiyorum
+- ilkokul eğitim ücreti nedir?
+- ortaokul eğitim ücreti nedir?
+- lise eğitim ücreti nedir?
+- ücrete neler dahil?
+- yemek ücrete dahil mi?
+- yemek ücreti nedir?
+- yemekhane ücreti ne kadar
+- okul ücreti ne kadar
+- servis ücrete dahil mi
+- servis ücreti nedir
+- servis ücreti
+- anaokul ücretlerini öğrenebilir miyim?
+- okul ücreti nedir?
+
+@ list ucrettipi = 
+
+    - yemek :
+        - yemekhane
+        - yemekli
+        - öğle yemeği
+
+
+    - servis :
+        - araç
+        - aracı
+        - araci
+        - arac
+        - shuttle
+
+    - ilkokul :
+        - ilk okul
+
+
+    - ortaokul :
+        - orta okul
+
+    - lise :
+        - lise
+
+    - okuloncesi :
+        - okul öncesi
+        - anaokul
+        - ana okulu 
+        - anaokulu
+
+    - kayit :
+        - kayıt
+
+
+
+
+# Iletisim
+- Öğrenci İşlerine nasıl ulaşabilirim?
+- Öğrenci işlerinin email adresi nedir?
+- Öğrenci işleri
+- öğrenci işleri nerde
+- öğrenci işleri mail
+- okulun iletişim bilgilerini söyleyebilir misin
+- öğrenci işleri iletişim
+- Öğrenci İşleri telefon numarası
+- Okulun iletişim adresi nedir
+- okula ulaşabileceğim bir telefon numarası var mı
+- okulun iletişim bilgileri 
+- iletişim bilgileri
+- Bilgi İşleme nasıl ulaşabilirim?
+- Bilgi İşlem
+- Bilgi İşlem iletişim
+- Bilgi İşlem telefon numarası
+- Bilgi İşlem'in email adresi nedir?
+- Bilgi İşlem nerde
+- Bilgi İşlem mail
+- bilgi işlem
+- bilgi işlemin telefon numarası
+- bilgi işleme nasıl ulaşabilirim
+- öğrenci işlerini aramak istiyorum
+
+
+@ list iletisimtipi = 
+
+    - ogrenciisleri :
+        - ogrenci isleri
+        - öğrenci işleri
+        - öğrenci işlerine
+        - öğrenci işlerini
+
+
+    - bilgiislem :
+        - bilgi islem
+        - bilgi işlem
+        - bilgi işlemi
+        - bilgi işleme
+  
+
+# Sosyal-Aktiviteler
+- Profesyonel sahneniz var mı?
+- Kültür Merkezi var mı?
+- kültür merkezi
+- profesyonel sahne
+- kültür merkeziniz var mı
+- spor salonu var mı
+- okulun spor merkezi bulunuyor mu
+- spor tesisleri hakkında bilgi almak istiyorum
+- Kaç öğrenci kulübü var?
+- Kulüpler hangi alanlarda var?
+- öğrenci kulüpleri
+- kaç spor kulübü var
+- sanatla ilgili kaç kulüp var
+
+
+@ list aktivitetipi = 
+
+    - kultur :
+        - kulturmerkezi
+        - kültür merkezi
+        - kultur merkezi
+        - profesyonel sahne
+        - kultur salonu
+
+    - spor :
+        - sporsalonu
+        - spor salonu
+        - spor tesisi
+        - spor merkezi
+        - sipor salonu
+        - basketbol sahası
+        - futbol sahası
+        - voleybol
+
+    - kulup :
+        - ogrencikulubu
+        - okul kulüpleri
+        - öğrenci kulübü
+        - öğrenci kulüpleri
+        - okul klübü
+        - ogrenci klübü
+        - topluluk
+        - öğrenci topluluğu
+
+# Sanal-Tur
+- Okulu ziyaret etmek istiyoruz.
+- Okulu ziyaret edebilir miyim
+- Okul ziyareti
+- Okul gezisi
+- Okulu gezebiliyor muyuz
+- Kampüs turu yapıyor musunuz?
+- Okulu ne zaman ziyaret edebiliriz?
+
+# Kayit-Kosullari
+-	Okul giriş koşulları nelerdir
+-	Kayıt koşulları
+-	Lisede sınıfına girmek için koşullar nedir
+-	Nasıl ilkokul sınıfına girilir
+-	Lise sınıfına alınırken nelere bakılır
+-	Lise sınıfına girerken neye bakılır
+-	Neye göre lise sınıfına alınılır
+-   Ortaokul kabul koşulları
+-   Lise sınıfına giriş kriterleri nelerdir?
+-   Lise kriterleri
+-   Okul öncesi sınıfları hangi kriterlere göre belirleniyor
+-   Lise sınıfına girişte kritelrer nelerdir?
+-   Lise sınıflarına kabul koşullarınız nelerdir?
+-   Lise kabul koşulları
+-   Lise kabul kriterleri
+-   Lise hazırlık kabul kriterleri
+-   Kabul kriterleri
+
+
+
+
+# Duyurular
+- Duyurular
+- Yaklaşan etkinlikler
+- Yakın zamanda gerçekleşecek etkinlikler
+- Son dakika haberleri
+- Yakın zamanda yapılmış duyurular
+- En son yayınlanmış duyuru
+- En yakın tarihli etkinlik nedir
+
+@ list duyurutipi = 
+
+    - duyuru :
+        - okul haberleri
+        - haber
+        - açıklama
+        - duyurular
+        - duyuruları
+        - yakın zaman haber
+        - yakın tarihli duyuru
+
+
+    - etkinlik :
+        - konser
+        - tiyatro
+        - sergi
+        - festival
+        - kermes
+
+# Akademik-Takvim
+- akademik takvim nasıl
+- bu ay eğitim takviminde neler var
+- dersler ne zaman başlıyor
+- ara sınavlar ne zaman
+- finaller hangi tarihlerde
+- akademik takvim
+- akademik takvimi öğrenebilir miyim
+- akademik takviminiz hakkında bilgi almak istiyorum
+- takviminiz nasıl
+
+
+# Akademik-Kadro
+- akademik kadro hakkında bilgi almak istiyorum
+- öğretmen kadronuz nasıl
+- kadronuzda kaç tane yabancı öğretmen var
+- okuldaki yabancı öğretmen sayısı kaç
+- sosyal bilgiler öğretmenleriniz kimler
+- matematik dersine giren öğretmenler
+- yabancı dil dersi için kaç öğretmen var
+- kaç tane yabanci dil öğretmeni var
+
+@ list akademikkadro = 
+
+    - sosyalbilgiler :
+        - sosyal bilgiler
+        - sosyal
+        - sosyal dersi
+        - tarih
+        - coğrafya
+        - sosyal bilimler
+
+    - matematik :
+        - mat dersi
+        - geometri
+
+    - yabancidil :
+        - yabanci dil
+        - yabancı dil
+        - ingilizce
+        - almanca
+        - fransızca
+
+
+# Yurtdisi
+- Yurt dışı programınız var mı?
+- Yurtdışına öğrenci gönderiyor musunuz
+- Exchange programları
+- Yurt dışı imkanı sunuyor musunuz
+- Farklı ülkelerde değişim programları var mı
+- Yurtdışı imkanları
+- Değişim programı var mı
+- Yurtdışında anlaşmalı olduğunuz kurumlar var mı
+- Yurtdışı başarıları
+- Yurtdışında gösterdiğiniz başarılar var mı
+- Yurtdışına giden başarılı öğrencileriniz var mı
+- Yurt dışı başarıları hakkında bilgi almak istiyorum
+
+@ list yurtdisitipi = 
+
+    - imkanlar :
+        - imkan
+        - imkanı
+        - imkanları
+        - program
+
+    - basari :
+        - başarı
+        - başarıları
+        - başarı oranları
+        - başarısı
+        - basari
+        
+
+
+# Okul-Basarilari
+- 2020-2021 yılı taban puan nedir
+- Geçtiğimiz yılki taban puanınız nedir
+- Geçtiğimiz yılki tavan puanınız neydi
+- 2020-2021 yılındaki kayıt aldığınız puan aralıkları nedir
+- Hangi puan aralıklarıyla kayıt aldınız
+- 2020-2021 yılındaki puan aralığınız neydi
+- Hangi puanla kayıt aldınız
+- Puanlar
+- tavan puanı
+- taban puanı
+- kontenjan
+- mezun başarısı
+- Lise kontenjanı nedir
+- Liseye kaç kişi alınıyor
+- Liseye alacağınız öğrenci sayısı nedir
+- Liseye alınacak kişi sayısı kaçtır
+- Kaç kişi lise sınıfına alınır
+- Kaç öğrenci alıyorsunuz?
+- Lise kontenjanı nedir?
+- Kontenjan
+- Kontenjan sayısı nedir?
+- Lise kontenjan
+- Ortaokul kontenjan
+- orta okul kontenjan
+- ilkokul kontenjanı nedir
+- ilk okul kontenjan
+- okulöncesi kontenjanı
+- anasınıfı kontenjanı nedir
+- Mezun olan öğrencilerinizin başarıları
+- Mezun başarıları
+- Mezunlarınızın kazandıkları üniversiteler
+- Okulunuz mezunlarının okuduğu okullar ve bölümler
+- Mezunların başarıları nasıl
+- mezunlarınız yurtdışında mı okuyor?
+- Öğrencileriniz eğitimi sonrası yurtdışında mı okuyor
+- Mezuniyet sonrası yurt dışında mı okuyor?
+
+
+@ list okulbasari = 
+
+    - tavan :
+        - tavan puanı
+        - maksimum puan
+        - en yüksek
+        - puan aralığı
+        - tavan
+    
+    - taban :
+        - taban puanı
+        - minimum puan
+        - en düşük
+        - taban
+
+    - kontenjan :
+        - kapasite
+        - kota
+        - kontenjan
+        - kontenjanlar
+
+    - mezun :
+        - mezuniyet
+        - mezun öğrenci
+        - mezun ogrenci
+        - mezun

@@ -1,0 +1,60 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "CEUJYN",
+    "name": "Tarihce",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "IB20hV"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "DZ94N1"
+          },
+          "assignments": [
+            {
+              "property": "dialog.tarihcebilgi",
+              "value": "=string(\"Aday veli ve öğrencileri bu kısımda kısaca tarihiniz hakkında bilgilendirebilirsiniz.\")"
+            },
+            {
+              "property": "dialog.kurulus",
+              "value": "=string(\"Kuruluş yılınızı buraya ekleyebilirsiniz.\")"
+            },
+            {
+              "property": "dialog.gelisme",
+              "value": "=string(\"Okulunuzla ilgili önemli gelismeleri listeleyin.\")"
+            },
+            {
+              "property": "dialog.tarihce",
+              "value": "=string(\"Adaptive cardlar ile bu görsellere siz yön verin.\")"
+            },
+            {
+              "property": "dialog.tarihceaction",
+              "value": "=string(\"Detaylı bilgi için...\")"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "AOuPdO"
+          },
+          "activity": "${SendActivity_AOuPdO()}"
+        }
+      ]
+    }
+  ],
+  "generator": "Tarihce.lg",
+  "recognizer": "Tarihce.lu.qna",
+  "id": "Tarihce"
+}

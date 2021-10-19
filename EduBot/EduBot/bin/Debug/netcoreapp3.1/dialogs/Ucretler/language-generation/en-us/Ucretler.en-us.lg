@@ -1,0 +1,1067 @@
+[import](common.lg)
+
+# SendActivity_dncr7A()
+[Activity
+    Text = ${SendActivity_dncr7A_text()}
+]
+
+# SendActivity_dncr7A_text()
+- ${ucretbilgi}
+# SendActivity_E6Qtvr()
+[Activity
+    Attachments = ${json(SendActivity_E6Qtvr_attachment_mIarOc())}
+]
+
+# SendActivity_E6Qtvr_attachment_mIarOc()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "Medium",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "height": "90px"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Eğitim Ücretleri",
+                            "horizontalAlignment": "Right",
+                            "size": "ExtraLarge",
+                            "color": "Attention",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ],
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    },
+                    "verticalContentAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucret}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 60,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucretdetaylar}",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.OpenUrl",
+                                    "title": "Tıklayınız",
+                                    "url": "https://www.microsoft.com/tr-tr/",
+                                    "style": "destructive"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "color": "Accent",
+                            "text": "${dialog.ucretkapsam}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_CKaSV6()
+[Activity
+    Attachments = ${json(SendActivity_CKaSV6_attachment_cims3v())}
+]
+
+# SendActivity_CKaSV6_attachment_cims3v()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "Medium",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "height": "90px"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Eğitim Ücretleri",
+                            "horizontalAlignment": "Right",
+                            "size": "ExtraLarge",
+                            "color": "Attention",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ],
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    },
+                    "verticalContentAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucret}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 60,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucretdetaylar}",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.OpenUrl",
+                                    "title": "Tıklayınız",
+                                    "url": "https://www.microsoft.com/tr-tr/",
+                                    "style": "destructive"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "color": "Accent",
+                            "text": "${dialog.ucretkapsam}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_FBs5KV()
+[Activity
+    Attachments = ${json(SendActivity_FBs5KV_attachment_h8yJ3g())}
+]
+
+# SendActivity_FBs5KV_attachment_h8yJ3g()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "Medium",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "height": "90px"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Eğitim Ücretleri",
+                            "horizontalAlignment": "Right",
+                            "size": "ExtraLarge",
+                            "color": "Attention",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ],
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    },
+                    "verticalContentAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucret}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 60,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucretdetaylar}",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.OpenUrl",
+                                    "title": "Tıklayınız",
+                                    "url": "https://www.microsoft.com/tr-tr/",
+                                    "style": "destructive"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "color": "Accent",
+                            "text": "${dialog.ucretkapsam}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_GvZlvV()
+[Activity
+    Attachments = ${json(SendActivity_GvZlvV_attachment_BFLfYT())}
+]
+
+# SendActivity_GvZlvV_attachment_BFLfYT()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "Medium",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "height": "90px"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Eğitim Ücretleri",
+                            "horizontalAlignment": "Right",
+                            "size": "ExtraLarge",
+                            "color": "Attention",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ],
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    },
+                    "verticalContentAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucret}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 60,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucretdetaylar}",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.OpenUrl",
+                                    "title": "Tıklayınız",
+                                    "url": "https://www.microsoft.com/tr-tr/",
+                                    "style": "destructive"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "color": "Accent",
+                            "text": "${dialog.ucretkapsam}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_Eybbmq()
+[Activity
+    Attachments = ${json(SendActivity_Eybbmq_attachment_oeY6Gt())}
+]
+
+# SendActivity_Eybbmq_attachment_oeY6Gt()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "Medium",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "height": "90px"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Eğitim Ücretleri",
+                            "horizontalAlignment": "Right",
+                            "size": "ExtraLarge",
+                            "color": "Attention",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ],
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    },
+                    "verticalContentAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucret}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 60,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucretdetaylar}",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.OpenUrl",
+                                    "title": "Tıklayınız",
+                                    "url": "https://www.microsoft.com/tr-tr/",
+                                    "style": "destructive"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "color": "Accent",
+                            "text": "${dialog.ucretkapsam}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_p0tmDp()
+[Activity
+    Attachments = ${json(SendActivity_p0tmDp_attachment_3TxQrv())}
+]
+
+# SendActivity_p0tmDp_attachment_3TxQrv()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "Medium",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "height": "90px"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Eğitim Ücretleri",
+                            "horizontalAlignment": "Right",
+                            "size": "ExtraLarge",
+                            "color": "Attention",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ],
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    },
+                    "verticalContentAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucret}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 60,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucretdetaylar}",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.OpenUrl",
+                                    "title": "Tıklayınız",
+                                    "url": "https://www.microsoft.com/tr-tr/",
+                                    "style": "destructive"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "color": "Accent",
+                            "text": "${dialog.ucretkapsam}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_CqbVCC()
+[Activity
+    Attachments = ${json(SendActivity_CqbVCC_attachment_E5GSeH())}
+]
+
+# SendActivity_CqbVCC_attachment_E5GSeH()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "speak": "<s>Flight KL0605 to San Fransisco has been delayed.</s><s>It will not leave until 10:10 AM.</s>",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "Medium",
+                            "url": "https://edubotstorage.blob.core.windows.net/edubot/cafe.png",
+                            "height": "90px"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Yemekhane",
+                            "horizontalAlignment": "Right",
+                            "size": "ExtraLarge",
+                            "color": "Attention",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ],
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    },
+                    "verticalContentAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.yemekhane}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 60,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Yemek Menüsü",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.yemekhanemenu}",
+                            "spacing": "Small",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 40,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Firma",
+                            "horizontalAlignment": "Right",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.yemekhanefirma}",
+                            "horizontalAlignment": "Right",
+                            "spacing": "Small",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucretkapsam}",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "color": "Accent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_xNNigp()
+[Activity
+    Attachments = ${json(SendActivity_xNNigp_attachment_ESogZK())}
+]
+
+# SendActivity_xNNigp_attachment_ESogZK()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://i.pinimg.com/originals/df/ea/dd/dfeaddf703acf71277dbb1d6d81479b0.gif",
+                                    "size": "Large"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "separator": true,
+                            "spacing": "Medium",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Sana başka nasıl yardımcı olabilirim? ",
+                                    "size": "Large",
+                                    "horizontalAlignment": "Center",
+                                    "wrap": true
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_nMGuRl()
+[Activity
+    Attachments = ${json(SendActivity_nMGuRl_attachment_3zdWRX())}
+]
+
+# SendActivity_nMGuRl_attachment_3zdWRX()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "speak": "<s>Flight KL0605 to San Fransisco has been delayed.</s><s>It will not leave until 10:10 AM.</s>",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "size": "Medium",
+                            "url": "https://edubotstorage.blob.core.windows.net/edubot/servis.png",
+                            "height": "50px"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Servis Hizmeti",
+                            "horizontalAlignment": "Right",
+                            "size": "ExtraLarge",
+                            "color": "Attention",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ],
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    },
+                    "verticalContentAlignment": "Center",
+                    "height": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 50,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Bölgeler",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.servisguzergah}",
+                            "spacing": "Small",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 50,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Firma",
+                            "horizontalAlignment": "Right",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.servisfirma}",
+                            "horizontalAlignment": "Right",
+                            "spacing": "Small",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "spacing": "Medium",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.ucretkapsam}",
+                            "isSubtle": true,
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "color": "Accent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```

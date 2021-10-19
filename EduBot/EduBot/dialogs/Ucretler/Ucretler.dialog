@@ -1,0 +1,208 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "eJC7wt",
+    "name": "Ucretler",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "7x4rMA"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "CkWTES"
+          },
+          "assignments": [
+            {
+              "property": "dialog.ucretbilgi",
+              "value": "=string(\"Okul ücretleriyle ilgili bilgi almak istediğini anlıyorum.\")"
+            },
+            {
+              "property": "dialog.ucretentity",
+              "value": "=turn.recognized.entities"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "dncr7A"
+          },
+          "activity": "${SendActivity_dncr7A()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "9siFH0"
+          },
+          "condition": "=contains(dialog.ucretentity, \"ucrettipi\")",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "VuyhWZ"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.ucret",
+                  "value": "=string(\"Aday veliler bu akıllı kartta okul ücretleri hakkında genel bilgilere ulaşabilir. Asıl ücret bilgisi için onları telefon numaranız, mail adresiniz veya websitenize yönlendirebilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.ucretdetaylar",
+                  "value": "=string(\"Detaylı bilgi için yönlendirmeyi aşağıdaki aksiyon butonunu kullanarak yapabilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.ucretkapsam",
+                  "value": "=string(\"Bu kısımda okul ücretinizin başka hizmetleri kapsayıp kapsamadığı hakkında bilgi verebilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.yemekhane",
+                  "value": "=string(\"Bu kısımda okulunuzdaki yemekhane, kantin gibi tesisler ve kapasiteleri hakkında bilgiler paylaşabilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.yemekhanemenu",
+                  "value": "=string(\"Yemekhane menüsü hakkında kısa bilgi veya kimler tarafından belirlendiği buraya eklenebilir.\")"
+                },
+                {
+                  "property": "dialog.yemekhanefirma",
+                  "value": "=string(\"Yemek hizmeti için anlaştığınız firma bilgilerini buraya ekleyebilirsiniz.\")"
+                },
+                {
+                  "property": "dialog.servisguzergah",
+                  "value": "=string(\"Servis adedi veya güzergahları hakkında bilgi buraya eklenebilir.\")"
+                },
+                {
+                  "property": "dialog.servisfirma",
+                  "value": "=string(\"Servis hizmeti için anlaştığınız firma bilgilerini buraya ekleyebilirsiniz.\")"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "9FhAlC"
+              },
+              "condition": "=dialog.ucretentity.ucrettipi[0][0]",
+              "cases": [
+                {
+                  "value": "yemek",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "CqbVCC"
+                      },
+                      "activity": "${SendActivity_CqbVCC()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "servis",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "nMGuRl"
+                      },
+                      "activity": "${SendActivity_nMGuRl()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "ilkokul",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "CKaSV6"
+                      },
+                      "activity": "${SendActivity_CKaSV6()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "ortaokul",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "FBs5KV"
+                      },
+                      "activity": "${SendActivity_FBs5KV()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "lise",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "GvZlvV"
+                      },
+                      "activity": "${SendActivity_GvZlvV()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "okuloncesi",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "Eybbmq"
+                      },
+                      "activity": "${SendActivity_Eybbmq()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "kayit",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "p0tmDp"
+                      },
+                      "activity": "${SendActivity_p0tmDp()}"
+                    }
+                  ]
+                }
+              ],
+              "default": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "E6Qtvr"
+                  },
+                  "activity": "${SendActivity_E6Qtvr()}"
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "xNNigp"
+              },
+              "activity": "${SendActivity_xNNigp()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Ucretler.lg",
+  "recognizer": "Ucretler.lu.qna",
+  "id": "Ucretler"
+}

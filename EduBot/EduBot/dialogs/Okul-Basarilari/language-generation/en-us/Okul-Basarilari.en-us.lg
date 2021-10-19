@@ -1,0 +1,307 @@
+[import](common.lg)
+
+# SendActivity_P3T0Mv()
+[Activity
+    Attachments = ${json(SendActivity_P3T0Mv_attachment_29X83l())}
+]
+
+# SendActivity_P3T0Mv_attachment_29X83l()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Kontenjan",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.kontenjan}",
+                            "wrap": true
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "url": "https://media.cheggcdn.com/study/1b7/1b75ffb3-7a4a-44ba-911c-6e9ba96f1f93/7036-13.1-9P-i1.png"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}```
+# SendActivity_EcZOar()
+[Activity
+    Attachments = ${json(SendActivity_EcZOar_attachment_sXasV8())}
+]
+
+# SendActivity_EcZOar_attachment_sXasV8()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Yıllara göre başarılarımız",
+            "weight": "Bolder",
+            "size": "Large",
+            "spacing": "None",
+            "wrap": true
+        },
+        {
+            "speak": "Mezun detay",
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 2,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.okulbasari}",
+                            "wrap": true,
+                            "fontType": "Default"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Daha fazlası için",
+            "url": "https://www.microsoft.com/tr-tr/",
+            "style": "positive"
+        }
+    ]
+}```
+# SendActivity_OsCVdH()
+[Activity
+    Attachments = ${json(SendActivity_OsCVdH_attachment_v4aS5S())}
+]
+
+# SendActivity_OsCVdH_attachment_v4aS5S()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "speak": "Grades",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Puanlar",
+            "wrap": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://www.ielts-mentor.com/images/writingsamples/riverdale-public-school-reading-math-test.png",
+                                    "width": "350px",
+                                    "horizontalAlignment": "Center"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${dialog.puanlardetay}",
+                                    "horizontalAlignment": "Center",
+                                    "wrap": true,
+                                    "height": "auto"
+                                },
+                                {
+                                    "type": "ActionSet",
+                                    "actions": [
+                                        {
+                                            "type": "Action.OpenUrl",
+                                            "title": "Puanlarla ilgili detaylar için",
+                                            "style": "destructive",
+                                            "url": "https://www.microsoft.com/tr-tr/"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minHeight": "0px",
+                            "horizontalAlignment": "Center",
+                            "verticalContentAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_hDeaXZ()
+[Activity
+    Attachments = ${json(SendActivity_hDeaXZ_attachment_ZZZRuW())}
+]
+
+# SendActivity_hDeaXZ_attachment_ZZZRuW()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "speak": "Grades",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Puanlar",
+            "wrap": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://www.ielts-mentor.com/images/writingsamples/riverdale-public-school-reading-math-test.png",
+                                    "width": "350px",
+                                    "horizontalAlignment": "Center"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${dialog.puanlardetay}",
+                                    "horizontalAlignment": "Center",
+                                    "wrap": true,
+                                    "height": "auto"
+                                },
+                                {
+                                    "type": "ActionSet",
+                                    "actions": [
+                                        {
+                                            "type": "Action.OpenUrl",
+                                            "title": "Puanlarla ilgili detaylar için",
+                                            "style": "destructive",
+                                            "url": "https://www.microsoft.com/tr-tr/"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minHeight": "0px",
+                            "horizontalAlignment": "Center",
+                            "verticalContentAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}```
+# SendActivity_HD5mp1()
+[Activity
+    Attachments = ${json(SendActivity_HD5mp1_attachment_J08Elq())}
+]
+
+# SendActivity_HD5mp1_attachment_J08Elq()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Mezun Başarıları",
+            "weight": "Bolder",
+            "size": "Large",
+            "spacing": "None",
+            "wrap": true
+        },
+        {
+            "type": "Image",
+            "url": "https://previews.123rf.com/images/sabelskaya/sabelskaya1712/sabelskaya171200239/92135846-vector-flat-college-university-graduates-scenes-set-boy-standing-hugging-parents-friends-in-graduati.jpg",
+            "horizontalAlignment": "Center",
+            "width": "0px"
+        },
+        {
+            "speak": "Yurtiçi detay",
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 2,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "2021 yılı",
+                            "wrap": true,
+                            "fontType": "Monospace",
+                            "size": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.mezundetay}",
+                            "size": "Small",
+                            "wrap": true,
+                            "maxLines": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Yerleşilen üniversitelerle ilgili detaylı bilgi",
+            "url": "https://www.microsoft.com/tr-tr/",
+            "style": "positive"
+        },
+        {
+            "type": "Action.OpenUrl",
+            "title": "Yerleşim oranları",
+            "url": "https://www.microsoft.com/tr-tr/",
+            "style": "destructive"
+        }
+    ]
+}```

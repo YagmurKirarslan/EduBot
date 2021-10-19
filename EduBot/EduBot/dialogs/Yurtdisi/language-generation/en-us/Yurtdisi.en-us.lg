@@ -1,0 +1,226 @@
+[import](common.lg)
+
+# SendActivity_8bAHcD()
+[Activity
+    Attachments = ${json(SendActivity_8bAHcD_attachment_yAluAw())}
+]
+
+# SendActivity_8bAHcD_attachment_yAluAw()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Yurtdışı İmkanları",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.yurtdisiprogram}",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/logo.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "75px"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.yurtdisidetay}\n",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "Daha detaylı bilgi için",
+                    "url": "https://www.microsoft.com/tr-tr/",
+                    "style": "positive"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "backgroundImage": {
+        "verticalAlignment": "Bottom"
+    },
+    "minHeight": "0px"
+}```
+# SendActivity_oMNViE()
+[Activity
+    Attachments = ${json(SendActivity_oMNViE_attachment_ugrBG3())}
+]
+
+# SendActivity_oMNViE_attachment_ugrBG3()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "text": "Yurtdışı Başarıları",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://edubotstorage.blob.core.windows.net/genericbot/school-logo.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialog.yurtdisibasari}",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "url": "https://thehoya.com/wp-content/uploads/2016/04/GARF.png"
+        },
+        {
+            "type": "TextBlock",
+            "text": "${dialog.yurtdisidetay}\n",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "Daha detaylı bilgi için",
+                    "url": "https://www.microsoft.com/tr-tr/",
+                    "style": "positive"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "backgroundImage": {
+        "verticalAlignment": "Bottom"
+    },
+    "minHeight": "0px"
+}```
+# SendActivity_gNXD55()
+[Activity
+    Attachments = ${json(SendActivity_gNXD55_attachment_M5kU3O())}
+]
+
+# SendActivity_gNXD55_attachment_M5kU3O()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Yurtdışı Başarı ve İmkanları",
+            "weight": "Bolder",
+            "size": "ExtraLarge",
+            "spacing": "None",
+            "wrap": true,
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "Image",
+            "url": "https://edubotstorage.blob.core.windows.net/genericbot/abroad.png",
+            "horizontalAlignment": "Center",
+            "width": "0px"
+        },
+        {
+            "speak": "Yurtdışı detay",
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 2,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "2021 yılı",
+                            "wrap": true,
+                            "fontType": "Monospace",
+                            "size": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${dialogyurtdisigenel}",
+                            "size": "Small",
+                            "wrap": true,
+                            "maxLines": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Daha fazlası için...",
+            "url": "https://www.microsoft.com/tr-tr/",
+            "style": "destructive"
+        }
+    ]
+}```
