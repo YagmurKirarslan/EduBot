@@ -1,0 +1,5 @@
+Bu proje katkı ve önerileri memnuniyetle karşılamaktadır. Katkıların çoğu, katkınızı kullanma hakkına sahip olduğunuzu ve aslında bize verdiğinizi beyan eden bir Katılımcı Lisans Sözleşmesi'ni (CLA) kabul etmenizi gerektirir. Ayrıntılar için https://cla.opensource.microsoft.com adresini ziyaret edebilirsiniz.
+
+Bir pull request gönderdiğinizde, bir CLA botu otomatik olarak bir CLA sağlamanız ve PR'ı uygun şekilde dekore etmeniz gerekip gerekmediğini belirler (örneğin, durum kontrolü, yorum). Bot tarafından sağlanan talimatları izlemenız yeterlidir. Cla'mızı kullanarak tüm depolarda bunu yalnızca bir kez yapmanız gerekir.
+
+Bu proje Microsoft Açık Kaynak Kullanım Kuralları'nı benimsemiştir. Daha fazla bilgi için Kullanım Kuralları SSS bölümüne bakabilirsiniz veya ek sorularınız veya yorumlarınız opencode@microsoft.com başvurabilirsiniz.
